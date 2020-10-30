@@ -1,0 +1,83 @@
+/*<!--O corpo do nosso documento, que é exibido pelo navegador em sua janela-->*/
+body{
+    color: #333333;/*Alterando a cor*/
+    font-family: 'Lucida Sans Unicode',  'Lucida Grande', sans-serif;/*Definindo a fonte*/
+    margin-left: auto;/*define a margem esquerda como automatica*/
+    margin-right: auto;/*define a margem direita como automatica*/
+    width: 940px;/*LARGURA*/
+}
+
+/*Titulo Principal*/
+h1 {
+    background-image: url(sobre-background.jpg);/*background-image permite indicar um arquivo de imagem para ser exibido ao
+    fundo do elemento.*/
+    padding: 10px; /*Esse valor e aplicado em todas as direções,distancia entre o limite do elemento,sua borda e seu respectivo conteúdo*/
+}
+
+/*Subtítulos*/
+h2{
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;/*define a margem superior;*/
+}
+
+/*Renderização das figuras*/
+figure{
+    background-color: #f2EDED;
+    border: 1px solid #ccc;/*Bordas*/
+    text-align: center;/*alinhamento de
+    texto*/
+    padding: 15px;/*Se passado somente um valor para a propriedade padding , esse mesmo valor é aplicado em todas as
+    direções.*/
+    margin: 30px;/*maneira abreviada para definir todas as 4 margens.*/
+}
+
+/*Legenda da Figura*/
+figcaption{
+    font-style: italic;/*font-style , que define o
+    estilo da fonte que pode ser: normal (normal na vertical), italic (inclinada) e oblique (oblíqua).*/
+    margin-top: 10px;/*define a margem superior*/
+}
+
+/*Todos os paragrafos*/
+p{
+    padding: 0 45px;/*Se passados dois valores, o primeiro será aplicado acima e abaixo (equivalente a passar o mesmo
+    valor para padding-top e padding-bottom ) e o segundo será aplicado à direita e à esquerda
+    (equivalente ao mesmo valor para padding-right e padding-left ).*/
+    text-indent: 15px;/* tamanho da margem da primeira linha do texto */
+}
+
+#centro-distribuicao{
+    margin-left: auto;/*define a margem esquerda*/
+    margin-right: auto;/*define a margem direita*/
+    width: 550px;/*LARGURA*/
+
+}
+
+#rodape{
+    color:#777;
+    margin: 30px 0;/*margem superior e inferior terão valor 30px - margem direita e esquerda terão valor 0*/
+    padding: 30px 0;/*Se passados dois valores, o primeiro será aplicado acima e abaixo (equivalente a passar o mesmo
+    valor para padding-top e padding-bottom ) e o segundo será aplicado à direita e à esquerda
+    (equivalente ao mesmo valor para padding-right e padding-left ).*/
+}
+
+#rodape img{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#familia-pelho{
+    float: right;
+    margin: 0 0 10px 10px;/*margens superior, direita, inferior e esquerda nesta ordem.*/
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+h1+p{
+    text-indent: 0;
+}
+:not(p) + p::first-line{
+    font-variant: small-caps;
+}
