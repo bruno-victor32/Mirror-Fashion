@@ -9,6 +9,7 @@
         <!--título do nosso documento, que normalmente será exibido na barra de título da janela do navegador ou na aba do documento.-->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/estilos.css">
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <!--contém o corpo do nosso documento, que é exibido pelo navegador em sua janela-->
@@ -107,10 +108,10 @@
             <!-- fim . banner-destaque-->
         </div>
         <!-- fim . container .destaque-->
-        <div class="container paineis">
+        <div class="container paineis ">
             <!-- os paineis de novidades e mais vendidos entrarão aqui dentro-->
 
-            <section class="painel novidades">
+            <section class="painel novidades" >
                 <h2>Novidades</h2>
                 <ol>
                     <!-- Lista de Produtos-->
@@ -180,6 +181,7 @@
                     </li>
                     <!--FIM DO SEXTO PRODUTO-->
                 </ol>
+                <button type="button">Mostrar mais</button>
             </section>
             <section class="painel mais-vendidos">
                 <h2>Mais Vendidos</h2>
@@ -252,6 +254,7 @@
                     </li>
                     <!--FIM DO SEXTO PRODUTO-->
                 </ol>
+                <button type="button">Mostrar mais</button>
             </section>
         </div>
         <footer>
@@ -270,5 +273,9 @@
                 </ul>
             </div>
         </footer>
+        <script type="text/javascript" src="js/query.js"></script>
+        <script  type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/banner.js"></script>
+        <a href="#" class="pause"></a>
     </body>
 </html>
